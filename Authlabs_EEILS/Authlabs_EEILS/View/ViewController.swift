@@ -66,6 +66,10 @@ private extension ViewController {
       ]
     )
   }
+  
+  func presentDetailViewController() {
+    
+  }
 }
 
 extension ViewController: ARSCNViewDelegate {
@@ -88,13 +92,13 @@ extension ViewController: ARSCNViewDelegate {
     }
     
     DispatchQueue.main.async {
-      let imageName = referenceImage.name
-      
+      guard let imageName = referenceImage.name else { return }
+      let detailViewController = DetailViewController()
+      detailViewController.setupNameLabel(name: imageName)
+      self.present(detailViewController, animated: true)
     }
   }
 }
 
-extension ViewController: ARSessionDelegate {
-  
-}
+extension ViewController: ARSessionDelegate { }
 
