@@ -3,7 +3,7 @@
 //  Authlabs_EEILS
 //
 //  Created by 강창현 on 4/22/24.
-//
+// https://fontmeme.com/fonts/german-beauty-font/
 
 import ARKit
 import UIKit
