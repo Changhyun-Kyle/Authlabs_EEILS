@@ -13,6 +13,8 @@ final class ViewController: UIViewController {
   
   private let sceneView: ARSCNView = .init()
   private let blurView: UIVisualEffectView = .init()
+  private var referenceImage: ARReferenceImage?
+  private var imageAnchor: ARImageAnchor?
   private var session: ARSession {
     return sceneView.session
   }
@@ -20,23 +22,23 @@ final class ViewController: UIViewController {
     return .sequence(
       [
         .wait(duration: 0.25),
-        .fadeOpacity(to: 0.85, duration: 0.25),
+        .fadeOpacity(to: 0.55, duration: 0.25),
         .fadeOpacity(to: 0.15, duration: 0.25),
-        .fadeOpacity(to: 0.85, duration: 0.25),
-        .fadeOut(duration: 0.5),
-        .removeFromParentNode()
+        .fadeOpacity(to: 0.55, duration: 0.25),
+        .fadeOpacity(to: 0.30, duration: 0.25),
       ]
     )
   }
+  
   override func loadView() {
     sceneView.delegate = self
-    sceneView.session.delegate = self
     view = sceneView
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     UIApplication.shared.isIdleTimerDisabled = true
+    addTapGesture()
     startTracking()
   }
   
@@ -47,6 +49,44 @@ final class ViewController: UIViewController {
 }
 
 private extension ViewController {
+  func addTapGesture() {
+    let tapGestureRecognizer = UITapGestureRecognizer(
+      target : self,
+      action : #selector(tappedTrackingImage)
+    )
+    self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+  }
+  
+  @objc
+  func tappedTrackingImage(recognizer: UITapGestureRecognizer){
+    guard
+      let sceneView = recognizer.view as? SCNView
+    else {
+      return
+    }
+    
+    let touchLocation : CGPoint = recognizer.location(in: sceneView)
+    let hitResults : [SCNHitTestResult] = sceneView.hitTest(touchLocation, options: [:])
+    
+    guard
+      !hitResults.isEmpty,
+      let referenceImage = self.referenceImage,
+      let imageName = referenceImage.name,
+      let capturedImage = self.sceneView.captureImage(by: hitResults[0].node),
+      let originalImage = UIImage(named: imageName)
+    else {
+      return
+    }
+    
+    DispatchQueue.main.async {
+      self.presentDetailViewController(
+        with: imageName,
+        captureImage: capturedImage,
+        originalImage: originalImage
+      )
+    }
+  }
+  
   func startTracking() {
     guard
       let referenceImages = ARReferenceImage.referenceImages(
@@ -56,8 +96,10 @@ private extension ViewController {
     else {
       return
     }
-    let configuration = ARWorldTrackingConfiguration()
-    configuration.detectionImages = referenceImages
+    
+    let configuration = ARImageTrackingConfiguration()
+    configuration.trackingImages = referenceImages
+    
     session.run(
       configuration,
       options: [
@@ -67,8 +109,19 @@ private extension ViewController {
     )
   }
   
-  func presentDetailViewController() {
-    
+  func presentDetailViewController(
+    with imageName: String,
+    captureImage: UIImage,
+    originalImage: UIImage
+  ) {
+    let detailViewController = DetailViewController()
+    detailViewController.configure(
+      name: imageName,
+      captureImage: captureImage,
+      originalImage: originalImage
+    )
+    self.present(detailViewController, animated: true)
+    startTracking()
   }
 }
 
@@ -79,7 +132,9 @@ extension ViewController: ARSCNViewDelegate {
     for anchor: ARAnchor
   ) {
     guard let imageAnchor = anchor as? ARImageAnchor else { return }
+    self.imageAnchor = imageAnchor
     let referenceImage = imageAnchor.referenceImage
+    self.referenceImage = referenceImage
     DispatchQueue.global().async {
       let plane = SCNPlane(
         width: referenceImage.physicalSize.width,
@@ -90,15 +145,5 @@ extension ViewController: ARSCNViewDelegate {
       planeNode.runAction(self.imageHighlightAction)
       node.addChildNode(planeNode)
     }
-    
-    DispatchQueue.main.async {
-      guard let imageName = referenceImage.name else { return }
-      let detailViewController = DetailViewController()
-      detailViewController.setupNameLabel(name: imageName)
-      self.present(detailViewController, animated: true)
-    }
   }
 }
-
-extension ViewController: ARSessionDelegate { }
-
