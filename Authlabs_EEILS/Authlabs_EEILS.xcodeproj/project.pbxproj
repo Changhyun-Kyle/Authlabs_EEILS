@@ -15,9 +15,19 @@
 		2734F3252BD7D9FC00F9BE38 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3242BD7D9FC00F9BE38 /* Choice.swift */; };
 		2734F3272BD7DA0A00F9BE38 /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3262BD7DA0A00F9BE38 /* ResponseMessage.swift */; };
 		2734F3292BD7DA1800F9BE38 /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3282BD7DA1800F9BE38 /* Usage.swift */; };
+		2734F32E2BD8C8ED00F9BE38 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F32D2BD8C8ED00F9BE38 /* NetworkService.swift */; };
+		2734F3312BD8CBB800F9BE38 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3302BD8CBB700F9BE38 /* Bundle+.swift */; };
+		2734F3342BD8CD9F00F9BE38 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3332BD8CD9F00F9BE38 /* URLSessionProtocol.swift */; };
+		2734F3372BD8CDC500F9BE38 /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3362BD8CDC500F9BE38 /* JSONHandler.swift */; };
+		2734F3392BD8CDE400F9BE38 /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3382BD8CDE400F9BE38 /* APIType.swift */; };
+		2734F33B2BD8CDF900F9BE38 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F33A2BD8CDF900F9BE38 /* HttpMethod.swift */; };
+		2734F33E2BD8CF8D00F9BE38 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F33D2BD8CF8D00F9BE38 /* NetworkError.swift */; };
+		2734F3402BD8CFA700F9BE38 /* NetworkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F33F2BD8CFA700F9BE38 /* NetworkURL.swift */; };
+		2734F3422BD8DA3500F9BE38 /* ARRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3412BD8DA3500F9BE38 /* ARRepository.swift */; };
+		2734F3442BD8EDB100F9BE38 /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3432BD8EDB100F9BE38 /* ARManager.swift */; };
 		2741C3592BD6418C0009E760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741C3582BD6418C0009E760 /* AppDelegate.swift */; };
 		2741C35B2BD6418C0009E760 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741C35A2BD6418C0009E760 /* SceneDelegate.swift */; };
-		2741C35D2BD6418C0009E760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741C35C2BD6418C0009E760 /* ViewController.swift */; };
+		2741C35D2BD6418C0009E760 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741C35C2BD6418C0009E760 /* ARViewController.swift */; };
 		2741C3622BD6418E0009E760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2741C3612BD6418E0009E760 /* Assets.xcassets */; };
 		2741C3652BD6418E0009E760 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2741C3642BD6418E0009E760 /* Base */; };
 		27C4E6E52BD66B9700B0EC90 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E6E42BD66B9600B0EC90 /* DetailViewController.swift */; };
@@ -34,10 +44,21 @@
 		2734F3242BD7D9FC00F9BE38 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		2734F3262BD7DA0A00F9BE38 /* ResponseMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMessage.swift; sourceTree = "<group>"; };
 		2734F3282BD7DA1800F9BE38 /* Usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
+		2734F32D2BD8C8ED00F9BE38 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2734F32F2BD8CB8700F9BE38 /* APIKey.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = APIKey.xcconfig; sourceTree = "<group>"; };
+		2734F3302BD8CBB700F9BE38 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		2734F3332BD8CD9F00F9BE38 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		2734F3362BD8CDC500F9BE38 /* JSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
+		2734F3382BD8CDE400F9BE38 /* APIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
+		2734F33A2BD8CDF900F9BE38 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		2734F33D2BD8CF8D00F9BE38 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2734F33F2BD8CFA700F9BE38 /* NetworkURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURL.swift; sourceTree = "<group>"; };
+		2734F3412BD8DA3500F9BE38 /* ARRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRepository.swift; sourceTree = "<group>"; };
+		2734F3432BD8EDB100F9BE38 /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
 		2741C3552BD6418C0009E760 /* Authlabs_EEILS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authlabs_EEILS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2741C3582BD6418C0009E760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2741C35A2BD6418C0009E760 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2741C35C2BD6418C0009E760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2741C35C2BD6418C0009E760 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		2741C3612BD6418E0009E760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2741C3642BD6418E0009E760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2741C3662BD6418E0009E760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,8 +81,11 @@
 		2734F3162BD7D6E900F9BE38 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2734F32C2BD8C4E200F9BE38 /* Network */,
 				2734F31B2BD7D99100F9BE38 /* Request */,
 				2734F31C2BD7D99600F9BE38 /* Response */,
+				2734F3412BD8DA3500F9BE38 /* ARRepository.swift */,
+				2734F3432BD8EDB100F9BE38 /* ARManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -88,9 +112,40 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		2734F32C2BD8C4E200F9BE38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2734F32D2BD8C8ED00F9BE38 /* NetworkService.swift */,
+				2734F33F2BD8CFA700F9BE38 /* NetworkURL.swift */,
+				2734F3382BD8CDE400F9BE38 /* APIType.swift */,
+				2734F33A2BD8CDF900F9BE38 /* HttpMethod.swift */,
+				2734F33D2BD8CF8D00F9BE38 /* NetworkError.swift */,
+				2734F3352BD8CDB800F9BE38 /* JSON */,
+				2734F3322BD8CD9300F9BE38 /* Protocol */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2734F3322BD8CD9300F9BE38 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2734F3332BD8CD9F00F9BE38 /* URLSessionProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2734F3352BD8CDB800F9BE38 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2734F3362BD8CDC500F9BE38 /* JSONHandler.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		2741C34C2BD6418C0009E760 = {
 			isa = PBXGroup;
 			children = (
+				2734F32F2BD8CB8700F9BE38 /* APIKey.xcconfig */,
 				2741C3572BD6418C0009E760 /* Authlabs_EEILS */,
 				2741C3562BD6418C0009E760 /* Products */,
 			);
@@ -138,7 +193,7 @@
 		27C4E6E32BD66B8300B0EC90 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2741C35C2BD6418C0009E760 /* ViewController.swift */,
+				2741C35C2BD6418C0009E760 /* ARViewController.swift */,
 				27C4E6E42BD66B9600B0EC90 /* DetailViewController.swift */,
 			);
 			path = View;
@@ -149,6 +204,7 @@
 			children = (
 				27C4E6E72BD7B00B00B0EC90 /* UIImage+.swift */,
 				27C4E6E92BD7B01600B0EC90 /* ARSCNView+.swift */,
+				2734F3302BD8CBB700F9BE38 /* Bundle+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -224,18 +280,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				2734F31A2BD7D7AC00F9BE38 /* Response.swift in Sources */,
+				2734F3392BD8CDE400F9BE38 /* APIType.swift in Sources */,
 				2734F31F2BD7D9AC00F9BE38 /* RequestMessage.swift in Sources */,
-				2741C35D2BD6418C0009E760 /* ViewController.swift in Sources */,
+				2734F3422BD8DA3500F9BE38 /* ARRepository.swift in Sources */,
+				2741C35D2BD6418C0009E760 /* ARViewController.swift in Sources */,
 				2734F3212BD7D9D400F9BE38 /* Content.swift in Sources */,
+				2734F3372BD8CDC500F9BE38 /* JSONHandler.swift in Sources */,
 				2741C3592BD6418C0009E760 /* AppDelegate.swift in Sources */,
 				27C4E6E82BD7B00B00B0EC90 /* UIImage+.swift in Sources */,
 				2734F3252BD7D9FC00F9BE38 /* Choice.swift in Sources */,
 				2741C35B2BD6418C0009E760 /* SceneDelegate.swift in Sources */,
+				2734F3342BD8CD9F00F9BE38 /* URLSessionProtocol.swift in Sources */,
 				2734F3182BD7D73500F9BE38 /* Request.swift in Sources */,
+				2734F33B2BD8CDF900F9BE38 /* HttpMethod.swift in Sources */,
 				2734F3272BD7DA0A00F9BE38 /* ResponseMessage.swift in Sources */,
+				2734F32E2BD8C8ED00F9BE38 /* NetworkService.swift in Sources */,
+				2734F3442BD8EDB100F9BE38 /* ARManager.swift in Sources */,
+				2734F33E2BD8CF8D00F9BE38 /* NetworkError.swift in Sources */,
 				27C4E6EA2BD7B01600B0EC90 /* ARSCNView+.swift in Sources */,
 				2734F3292BD7DA1800F9BE38 /* Usage.swift in Sources */,
+				2734F3312BD8CBB800F9BE38 /* Bundle+.swift in Sources */,
 				2734F3232BD7D9E900F9BE38 /* ImageURL.swift in Sources */,
+				2734F3402BD8CFA700F9BE38 /* NetworkURL.swift in Sources */,
 				27C4E6E52BD66B9700B0EC90 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +322,7 @@
 /* Begin XCBuildConfiguration section */
 		2741C3672BD6418E0009E760 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2734F32F2BD8CB8700F9BE38 /* APIKey.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -375,6 +442,7 @@
 		};
 		2741C36A2BD6418E0009E760 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2734F32F2BD8CB8700F9BE38 /* APIKey.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

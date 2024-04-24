@@ -6,9 +6,9 @@
 //
 
 struct Request: Encodable {
-  let model: String
+  let model: String = "gpt-4-turbo"
   let messages: [RequestMessage]
-  let maxTokens: Int
+  let maxTokens: Int = 300
   
   enum CodingKeys: String, CodingKey {
     case model

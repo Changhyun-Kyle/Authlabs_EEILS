@@ -11,6 +11,7 @@ import UIKit
 
 final class ARViewController: UIViewController {
   
+  private let arManager: ARManager = .init()
   private let sceneView: ARSCNView = .init()
   private let blurView: UIVisualEffectView = .init()
   private var referenceImage: ARReferenceImage?
@@ -73,18 +74,16 @@ private extension ARViewController {
       let referenceImage = self.referenceImage,
       let imageName = referenceImage.name,
       let capturedImage = self.sceneView.captureImage(by: hitResults[0].node),
-      let originalImage = UIImage(named: imageName)
+      let originalImage = UIImage(named: imageName),
+      let imageURL = capturedImage.pngData()?.base64EncodedString()
     else {
       return
     }
-    
-    DispatchQueue.main.async {
-      self.presentDetailViewController(
-        with: imageName,
-        captureImage: capturedImage,
-        originalImage: originalImage
-      )
-    }
+    self.fetchResponse(
+      imageURL: imageURL,
+      capturedImage: capturedImage,
+      originalImage: originalImage
+    )
   }
   
   func startTracking() {
@@ -107,6 +106,28 @@ private extension ARViewController {
         .removeExistingAnchors
       ]
     )
+  }
+  
+  func fetchResponse(
+    imageURL: String,
+    capturedImage: UIImage,
+    originalImage: UIImage
+  ) {
+    Task {
+      do {
+        let result = try await arManager.fetchResponse(imageURL: imageURL)
+        DispatchQueue.main.async {
+          self.presentDetailViewController(
+            with: result.content,
+            captureImage: capturedImage,
+            originalImage: originalImage
+          )
+        }
+      } catch {
+        // TODO: - Alert
+        print(error.localizedDescription)
+      }
+    }
   }
   
   func presentDetailViewController(

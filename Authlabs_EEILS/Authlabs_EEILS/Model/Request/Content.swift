@@ -7,8 +7,8 @@
 
 struct Content: Encodable {
   let type: String
-  let text: String?
-  let imageURL: ImageURL?
+  var text: String? = nil
+  var imageURL: ImageURL? = nil
   
   enum CodingKeys: String, CodingKey {
     case type

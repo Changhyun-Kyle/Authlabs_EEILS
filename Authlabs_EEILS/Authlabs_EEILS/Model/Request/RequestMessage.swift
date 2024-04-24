@@ -6,6 +6,6 @@
 //
 
 struct RequestMessage: Encodable {
-  let role: String
+  let role: String = "user"
   let content: [Content]
 }
