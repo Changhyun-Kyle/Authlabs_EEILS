@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ARViewController.swift
 //  Authlabs_EEILS
 //
 //  Created by 강창현 on 4/22/24.
@@ -9,7 +9,7 @@ import ARKit
 import SceneKit
 import UIKit
 
-final class ViewController: UIViewController {
+final class ARViewController: UIViewController {
   
   private let sceneView: ARSCNView = .init()
   private let blurView: UIVisualEffectView = .init()
@@ -48,7 +48,7 @@ final class ViewController: UIViewController {
   }
 }
 
-private extension ViewController {
+private extension ARViewController {
   func addTapGesture() {
     let tapGestureRecognizer = UITapGestureRecognizer(
       target : self,
@@ -125,7 +125,7 @@ private extension ViewController {
   }
 }
 
-extension ViewController: ARSCNViewDelegate {
+extension ARViewController: ARSCNViewDelegate {
   func renderer(
     _ renderer: any SCNSceneRenderer,
     didAdd node: SCNNode,
