@@ -79,6 +79,7 @@ private extension ARViewController {
     else {
       return
     }
+    
     self.fetchResponse(
       imageURL: imageURL,
       capturedImage: capturedImage,
@@ -115,6 +116,8 @@ private extension ARViewController {
   ) {
     Task {
       do {
+        LoadingIndicatorView.showLoading(in: self.view)
+        session.pause()
         let result = try await arManager.fetchResponse(imageURL: imageURL)
         DispatchQueue.main.async {
           self.presentDetailViewController(
@@ -131,17 +134,21 @@ private extension ARViewController {
   }
   
   func presentDetailViewController(
-    with imageName: String,
+    with result: String,
     captureImage: UIImage,
     originalImage: UIImage
   ) {
     let detailViewController = DetailViewController()
+    let content = result.formatResponse()
     detailViewController.configure(
-      name: imageName,
+      definition: content.definition,
+      description: content.description,
       captureImage: captureImage,
       originalImage: originalImage
     )
-    self.present(detailViewController, animated: true)
+    self.present(detailViewController, animated: true) {
+      LoadingIndicatorView.hideLoading(in: self.view)
+    }
     startTracking()
   }
 }
