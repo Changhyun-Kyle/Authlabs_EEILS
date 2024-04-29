@@ -8,5 +8,14 @@
 import UIKit
 
 final class SaveViewController: UIViewController {
-  
+  override func loadView() {
+    super.loadView()
+    configureUI()
+  }
+}
+
+private extension SaveViewController {
+  func configureUI() {
+    self.title = "저장목록"
+  }
 }
