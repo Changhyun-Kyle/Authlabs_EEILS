@@ -14,12 +14,12 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window = UIWindow(windowScene: windowScene)
-    let rootViewController = ARViewController()
-    let statusVC = StatusViewController()
-    rootViewController.addChild(statusVC)
-    rootViewController.view.addSubview(statusVC.view)
-    statusVC.didMove(toParent: rootViewController)
-//    let navigationViewController = UINavigationController(rootViewController: rootViewController)
+//    let rootViewController = ARViewController()
+    let rootViewController = TabbarController()
+//    let statusVC = StatusViewController()
+//    rootViewController.addChild(statusVC)
+//    rootViewController.view.addSubview(statusVC.view)
+//    statusVC.didMove(toParent: rootViewController)
     window?.rootViewController = rootViewController
     window?.makeKeyAndVisible()
   }
