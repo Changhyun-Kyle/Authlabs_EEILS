@@ -45,6 +45,7 @@
 		27A9B1E12BDFAD0300DE5A1E /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9B1E02BDFAD0300DE5A1E /* SaveViewController.swift */; };
 		27A9B1E62BDFB00500DE5A1E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 27A9B1E52BDFB00500DE5A1E /* Lottie */; };
 		27A9B1E92BDFC6B500DE5A1E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9B1E82BDFC6B500DE5A1E /* ImageCell.swift */; };
+		27A9B1ED2BE0BFC000DE5A1E /* MarkerConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9B1EC2BE0BFC000DE5A1E /* MarkerConfigureViewController.swift */; };
 		27C4E6E52BD66B9700B0EC90 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E6E42BD66B9600B0EC90 /* DetailViewController.swift */; };
 		27C4E6E82BD7B00B00B0EC90 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E6E72BD7B00B00B0EC90 /* UIImage+.swift */; };
 		27C4E6EA2BD7B01600B0EC90 /* ARSCNView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E6E92BD7B01600B0EC90 /* ARSCNView+.swift */; };
@@ -91,6 +92,7 @@
 		27A9B1DE2BDFACF100DE5A1E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		27A9B1E02BDFAD0300DE5A1E /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		27A9B1E82BDFC6B500DE5A1E /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		27A9B1EC2BE0BFC000DE5A1E /* MarkerConfigureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerConfigureViewController.swift; sourceTree = "<group>"; };
 		27C4E6E42BD66B9600B0EC90 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		27C4E6E72BD7B00B00B0EC90 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		27C4E6E92BD7B01600B0EC90 /* ARSCNView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSCNView+.swift"; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				2741C35C2BD6418C0009E760 /* ARViewController.swift */,
 				27A9B1DC2BDF9A4500DE5A1E /* TabbarController.swift */,
 				27A9B1DE2BDFACF100DE5A1E /* ImageViewController.swift */,
+				27A9B1EC2BE0BFC000DE5A1E /* MarkerConfigureViewController.swift */,
 				27A9B1E02BDFAD0300DE5A1E /* SaveViewController.swift */,
 				2734F35C2BDA855400F9BE38 /* StatusViewController.swift */,
 				27C4E6E42BD66B9600B0EC90 /* DetailViewController.swift */,
@@ -381,6 +384,7 @@
 				2734F34A2BD9EC4F00F9BE38 /* DetailView.swift in Sources */,
 				2734F3552BDA648200F9BE38 /* LoadingIndicatorView.swift in Sources */,
 				27A9B1E12BDFAD0300DE5A1E /* SaveViewController.swift in Sources */,
+				27A9B1ED2BE0BFC000DE5A1E /* MarkerConfigureViewController.swift in Sources */,
 				2734F33E2BD8CF8D00F9BE38 /* NetworkError.swift in Sources */,
 				27C4E6EA2BD7B01600B0EC90 /* ARSCNView+.swift in Sources */,
 				2734F3292BD7DA1800F9BE38 /* Usage.swift in Sources */,
@@ -539,10 +543,12 @@
 				DEVELOPMENT_TEAM = K9NKZR257N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Authlabs_EEILS/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "EEILS(이일스)";
+				INFOPLIST_KEY_NSCameraUsageDescription = "앱 서비스 사용에 있어 사용자의 카메라 권한 동의가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,10 +572,12 @@
 				DEVELOPMENT_TEAM = K9NKZR257N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Authlabs_EEILS/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "EEILS(이일스)";
+				INFOPLIST_KEY_NSCameraUsageDescription = "앱 서비스 사용에 있어 사용자의 카메라 권한 동의가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
