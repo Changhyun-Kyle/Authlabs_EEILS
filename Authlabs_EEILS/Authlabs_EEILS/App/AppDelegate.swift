@@ -3,8 +3,7 @@
 //  Authlabs_EEILS
 //
 //  Created by 강창현 on 4/22/24.
-// https://fontmeme.com/fonts/german-beauty-font/
-// https://fontmeme.com/arms-video-game-font/
+// https://fontmeme.com/fonts/knowhow-font/
 
 import ARKit
 import UIKit
@@ -15,7 +14,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    guard 
+    sleep(1)
+    guard
       ARWorldTrackingConfiguration.isSupported
     else {
       fatalError(
