@@ -41,9 +41,9 @@
 		27A9B1DD2BDF9A4500DE5A1E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9B1DC2BDF9A4500DE5A1E /* TabbarController.swift */; };
 		27A9B1DF2BDFACF100DE5A1E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9B1DE2BDFACF100DE5A1E /* ImageViewController.swift */; };
 		27A9B1E12BDFAD0300DE5A1E /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9B1E02BDFAD0300DE5A1E /* SaveViewController.swift */; };
-		27A9B1E62BDFB00500DE5A1E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 27A9B1E52BDFB00500DE5A1E /* Lottie */; };
 		27A9B1E92BDFC6B500DE5A1E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9B1E82BDFC6B500DE5A1E /* ImageCell.swift */; };
 		27A9B1ED2BE0BFC000DE5A1E /* MarkerConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A9B1EC2BE0BFC000DE5A1E /* MarkerConfigureViewController.swift */; };
+		27A9B1F02BE1208D00DE5A1E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 27A9B1EF2BE1208D00DE5A1E /* Lottie */; };
 		27C4E6E52BD66B9700B0EC90 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E6E42BD66B9600B0EC90 /* DetailViewController.swift */; };
 		27C4E6E82BD7B00B00B0EC90 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E6E72BD7B00B00B0EC90 /* UIImage+.swift */; };
 		27C4E6EA2BD7B01600B0EC90 /* ARSCNView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C4E6E92BD7B01600B0EC90 /* ARSCNView+.swift */; };
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A9B1E62BDFB00500DE5A1E /* Lottie in Frameworks */,
+				27A9B1F02BE1208D00DE5A1E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +291,7 @@
 			);
 			name = Authlabs_EEILS;
 			packageProductDependencies = (
-				27A9B1E52BDFB00500DE5A1E /* Lottie */,
+				27A9B1EF2BE1208D00DE5A1E /* Lottie */,
 			);
 			productName = Authlabs_EEILS;
 			productReference = 2741C3552BD6418C0009E760 /* Authlabs_EEILS.app */;
@@ -322,7 +322,7 @@
 			);
 			mainGroup = 2741C34C2BD6418C0009E760;
 			packageReferences = (
-				27A9B1E42BDFB00500DE5A1E /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				27A9B1EE2BE1208C00DE5A1E /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 2741C3562BD6418C0009E760 /* Products */;
 			projectDirPath = "";
@@ -607,7 +607,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		27A9B1E42BDFB00500DE5A1E /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+		27A9B1EE2BE1208C00DE5A1E /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
 			requirement = {
@@ -618,9 +618,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		27A9B1E52BDFB00500DE5A1E /* Lottie */ = {
+		27A9B1EF2BE1208D00DE5A1E /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 27A9B1E42BDFB00500DE5A1E /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			package = 27A9B1EE2BE1208C00DE5A1E /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
