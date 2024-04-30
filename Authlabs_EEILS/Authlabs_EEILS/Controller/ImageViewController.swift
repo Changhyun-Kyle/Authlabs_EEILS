@@ -14,7 +14,6 @@ final class ImageViewController: UIViewController {
   private let imageCollectionView: UICollectionView = {
     let layout = UICollectionViewFlowLayout()
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-    layout.itemSize = CGSize(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.width / 2)
     collectionView.register(ImageCell.self, forCellWithReuseIdentifier: ImageCell.identifier)
     return collectionView
   }()
@@ -56,7 +55,7 @@ extension ImageViewController: UICollectionViewDataSource, UICollectionViewDeleg
   ) -> Int {
     return images.count
   }
-  
+   
   func collectionView(
     _ collectionView: UICollectionView,
     cellForItemAt indexPath: IndexPath

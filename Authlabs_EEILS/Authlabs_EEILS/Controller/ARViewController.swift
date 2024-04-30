@@ -33,6 +33,7 @@ final class ARViewController: UIViewController {
     return children.lazy.compactMap { $0 as? StatusViewController }.first!
   }()
   private var isRestartAvailable = true
+  private var newReferenceImages: Set<ARReferenceImage> = .init()
   
   override func loadView() {
     sceneView.delegate = self

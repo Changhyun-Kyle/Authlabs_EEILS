@@ -12,14 +12,14 @@ final class ContentStackView: UIStackView {
     let label = UILabel()
     label.text = "정의"
     label.font = .preferredFont(for: .body, weight: .bold)
-    label.textColor = .black
+    label.textColor = .systemOrange
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
   
   private var definitionLabel: UILabel = {
     let label = UILabel()
-    label.textColor = .black
+    label.textColor = .white
     label.numberOfLines = 0
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
@@ -44,14 +44,14 @@ final class ContentStackView: UIStackView {
     let label = UILabel()
     label.text = "설명"
     label.font = .preferredFont(for: .body, weight: .bold)
-    label.textColor = .black
+    label.textColor = .systemOrange
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
   
   private var descriptionLabel: UILabel = {
     let label = UILabel()
-    label.textColor = .black
+    label.textColor = .white
     label.numberOfLines = 0
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
