@@ -66,15 +66,19 @@ AI활용 iOS 앱 개발자 부트캠프 채용형 미니인턴 - 오스랩스
 
 ## 📱 주요기능과 스크린샷
 
-|LaunchScreen|마커등록 뷰(1)|마커등록 뷰(2)|마커등록 뷰(3)|
-|:-----:|:-----:|:-----:|:-----:|
-|||||
+|로딩뷰|마커등록 뷰(1)|마커등록 뷰(2)|마커등록 뷰(3)|
+|:-----------:|:--------:|:----------:|:---------:|
+|![IMG_7141](https://github.com/Changhyun-Kyle/Authlabs_EEILS/assets/101093592/184f827c-fc3c-4d52-9da5-2134a5f7b9e2)|![IMG_7133](https://github.com/Changhyun-Kyle/Authlabs_EEILS/assets/101093592/4e397de5-c182-46ed-8043-8ea3387fe5af)|![IMG_7135](https://github.com/Changhyun-Kyle/Authlabs_EEILS/assets/101093592/7007d81d-33bf-4a5e-8e64-45d52676e74d)|![IMG_7130](https://github.com/Changhyun-Kyle/Authlabs_EEILS/assets/101093592/a0c25213-6f18-423a-a40c-e4909ba57bb4)|
+
+|카메라뷰|분석 로딩|분석결과|저장목록|
+|:-----------:|:--------:|:----------:|:---------:|
+|![IMG_93EBA69D0AF3-1](https://github.com/Changhyun-Kyle/Authlabs_EEILS/assets/101093592/555a8ec6-746a-4460-bc14-a14dbbf4a402)|![IMG_7136](https://github.com/Changhyun-Kyle/Authlabs_EEILS/assets/101093592/69ce0cf7-adbb-462c-baa4-f00b82f49396)|![IMG_C512294FF03E-1](https://github.com/Changhyun-Kyle/Authlabs_EEILS/assets/101093592/4d025002-f495-4813-8131-80b5f0fa2f9d)|![IMG_7134](https://github.com/Changhyun-Kyle/Authlabs_EEILS/assets/101093592/4b0726c8-8293-4986-bb0d-108693ce25a7)|
 
 ---
 
 ## 💻 개발 도구 및 활용한 기술
 - 개발 언어 : Swift
-- 개발 환경 : Swift5 16.2, SE ~ iPhone 14 Pro 호환, 가로모드, 라이트모드 미지원
+- 개발 환경 : Swift5 16.2 ~, SE ~ iPhone 14 Pro 호환, 가로모드, 라이트모드 미지원
 - 활용한 기술
     - Xcode
     - ARKit
