@@ -31,10 +31,8 @@
 		2734F34C2BD9EC9F00F9BE38 /* ContentStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F34B2BD9EC9F00F9BE38 /* ContentStackView.swift */; };
 		2734F34E2BD9ECA600F9BE38 /* ContentImageStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F34D2BD9ECA600F9BE38 /* ContentImageStackView.swift */; };
 		2734F3552BDA648200F9BE38 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F3542BDA648100F9BE38 /* LoadingIndicatorView.swift */; };
-		2734F3592BDA6ADD00F9BE38 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 2734F3582BDA6ADD00F9BE38 /* loading.json */; };
-		2734F35B2BDA6CE400F9BE38 /* Animation - 1714042188329.json in Resources */ = {isa = PBXBuildFile; fileRef = 2734F35A2BDA6CE400F9BE38 /* Animation - 1714042188329.json */; };
+		2734F35B2BDA6CE400F9BE38 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 2734F35A2BDA6CE400F9BE38 /* loading.json */; };
 		2734F35D2BDA855400F9BE38 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F35C2BDA855400F9BE38 /* StatusViewController.swift */; };
-		2734F35F2BDA8F5600F9BE38 /* Animation_-_1714050021144-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2734F35E2BDA8F5500F9BE38 /* Animation_-_1714050021144-2.json */; };
 		2741C3592BD6418C0009E760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741C3582BD6418C0009E760 /* AppDelegate.swift */; };
 		2741C35B2BD6418C0009E760 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741C35A2BD6418C0009E760 /* SceneDelegate.swift */; };
 		2741C35D2BD6418C0009E760 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2741C35C2BD6418C0009E760 /* ARViewController.swift */; };
@@ -77,10 +75,8 @@
 		2734F34B2BD9EC9F00F9BE38 /* ContentStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStackView.swift; sourceTree = "<group>"; };
 		2734F34D2BD9ECA600F9BE38 /* ContentImageStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentImageStackView.swift; sourceTree = "<group>"; };
 		2734F3542BDA648100F9BE38 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
-		2734F3582BDA6ADD00F9BE38 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
-		2734F35A2BDA6CE400F9BE38 /* Animation - 1714042188329.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Animation - 1714042188329.json"; sourceTree = "<group>"; };
+		2734F35A2BDA6CE400F9BE38 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		2734F35C2BDA855400F9BE38 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
-		2734F35E2BDA8F5500F9BE38 /* Animation_-_1714050021144-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Animation_-_1714050021144-2.json"; sourceTree = "<group>"; };
 		2741C3552BD6418C0009E760 /* Authlabs_EEILS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authlabs_EEILS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2741C3582BD6418C0009E760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2741C35A2BD6418C0009E760 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -219,9 +215,7 @@
 				2741C3612BD6418E0009E760 /* Assets.xcassets */,
 				2741C3632BD6418E0009E760 /* LaunchScreen.storyboard */,
 				2741C3662BD6418E0009E760 /* Info.plist */,
-				2734F3582BDA6ADD00F9BE38 /* loading.json */,
-				2734F35A2BDA6CE400F9BE38 /* Animation - 1714042188329.json */,
-				2734F35E2BDA8F5500F9BE38 /* Animation_-_1714050021144-2.json */,
+				2734F35A2BDA6CE400F9BE38 /* loading.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -345,10 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2741C3622BD6418E0009E760 /* Assets.xcassets in Resources */,
-				2734F35B2BDA6CE400F9BE38 /* Animation - 1714042188329.json in Resources */,
+				2734F35B2BDA6CE400F9BE38 /* loading.json in Resources */,
 				2741C3652BD6418E0009E760 /* Base in Resources */,
-				2734F3592BDA6ADD00F9BE38 /* loading.json in Resources */,
-				2734F35F2BDA8F5600F9BE38 /* Animation_-_1714050021144-2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
