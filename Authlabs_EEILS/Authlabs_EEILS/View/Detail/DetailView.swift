@@ -14,7 +14,7 @@ final class DetailView: UIView {
     let label = UILabel()
     label.text = "분석결과"
     label.textAlignment = .left
-    label.textColor = .black
+    label.textColor = .systemOrange
     label.font = .preferredFont(for: .largeTitle, weight: .bold)
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
@@ -22,7 +22,7 @@ final class DetailView: UIView {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    self.backgroundColor = .white
+    self.backgroundColor = .black
     configureUI()
     setupConstraints()
   }

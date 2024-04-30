@@ -18,4 +18,8 @@ private extension SaveViewController {
   func configureUI() {
     self.title = "저장목록"
   }
+  
+  func 나는_왜_사는걸까() {
+    self.dismiss(animated: false)
+  }
 }

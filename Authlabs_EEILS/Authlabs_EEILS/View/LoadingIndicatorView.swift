@@ -15,7 +15,7 @@ enum LoadingIndicatorView {
     guard
       let existedView = view.subviews.first(where: { $0 is LottieAnimationView } ) as? LottieAnimationView
     else {
-      animationView = .init(name: "Animation - 1714042188329")
+      animationView = .init(name: "loading")
       animationView.frame = view.bounds
       animationView.contentMode = .scaleAspectFit
       animationView.loopMode = .loop
